@@ -11,5 +11,5 @@ output "container_name" {
 output "connection_string" {
   description = "Connection string for PostgreSQL"
   value       = "postgres://postgres:${var.postgres_password}@127.0.0.1:${var.postgres_port}/${var.postgres_db}"
-  sensitive   = false
+  sensitive   = true
 }
