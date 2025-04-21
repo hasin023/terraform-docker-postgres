@@ -3,9 +3,9 @@ output "container_id" {
   value       = docker_container.postgres.id
 }
 
-output "image_id" {
-  description = "ID of the Docker image"
-  value       = docker_image.postgres.id
+output "container_name" {
+  description = "Name of the Docker container"
+  value       = docker_container.postgres.name
 }
 
 output "connection_string" {
